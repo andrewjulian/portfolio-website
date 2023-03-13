@@ -11,7 +11,13 @@ const Navbar = () => {
 
   return (
     <div className="text-white flex justify-between  items-center h-24 max-w-[1240px] mx-auto px-4">
-      <img src={logo} className="h-10 w-10" alt="logo" />
+      <div className="flex text-center">
+        <img src={logo} className="h-10 w-10 mr-4" alt="logo" />
+        <h1 className="text-[#0097b2] font-semibold text-2xl mt-1">
+          Andrew Julian
+        </h1>
+      </div>
+
       <ul className="hidden md:flex">
         <li className="p-4">About</li>
         <li className="p-4">Projects</li>
