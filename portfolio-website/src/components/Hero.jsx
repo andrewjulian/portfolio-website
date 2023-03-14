@@ -6,15 +6,14 @@ import medium from "../assets/medium-black-symbol.png";
 
 const Hero = () => {
   return (
-    <div className="">
-      <img src={hero} alt="hero" className="sm:w-[50%] float-right pr-4" />
-
+    <div>
+      <img src={hero} alt="hero" className="md:mr-4 sm:w-[50%] float-right" />
       <div className="px-[5%] py-[14%]">
         <h1 className="text-center text-[#0097b2] font-extrabold text-[5vw]">
           Andrew Julian
         </h1>
-        <h1 className="text-center text-[#0097b2] font-extrabold text-[2vw]">
-          Full Stack Developer{" "}
+        <h1 className="text-center text-[#0097b2] font-extrabold text-[3vw]">
+          Full Stack Developer
         </h1>
         <div className="flex justify-center mt-2">
           <a href="https://github.com/Andrewjulian" target="blank">
