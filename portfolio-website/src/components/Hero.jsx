@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div>
       <img src={hero} alt="hero" className="md:mr-4 sm:w-[50%] float-right" />
-      <div className="px-[5%] py-[14%]">
+      <div className="px-[5%] py-[15%]">
         <h1 className="text-center text-[#0097b2] font-extrabold text-[5vw]">
           Andrew Julian
         </h1>
