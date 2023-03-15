@@ -6,12 +6,13 @@ import medium from "../assets/medium-black-symbol.png";
 import "../index.css";
 
 const FADE_INTERVAL_MS = 2000;
-const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 1.9;
+const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2;
 const WORDS_TO_ANIMATE = [
   "Front End Developer",
   "Back End Developer",
   "Full Stack Developer",
   "Web Developer",
+  "Software Engineer",
 ];
 
 let FadeProp = { fade: "fade-in" | "fade-out" };
