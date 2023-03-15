@@ -39,7 +39,7 @@ const Hero = () => {
     }, WORD_CHANGE_INTERVAL_MS);
 
     return () => clearInterval(wordTimeout);
-  }, []);
+  }, [wordOrder]);
 
   return (
     <div>
