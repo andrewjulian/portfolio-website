@@ -57,14 +57,15 @@ const About = () => {
         alt="code"
         className="hidden sm:flex w-[40%] mx-[3%] rounded-2xl"
       />
-      <div className="block sm:mr-[2%] ">
-        <h1 className="text-center text-black sm:text-black italic text-[4vw] sm:text-[2vw] py-auto">
+      <div className="block pt sm:mr-[2%] ">
+        <h1 className="text-center text-black sm:text-black italic font-bold text-[4vw] sm:text-[2vw] py-auto">
           Building technology to improve experiences
         </h1>
         <h3 className="text-center text-[#0097b2] sm:text-[#0097b2] font-bold ">
-          I am a full stack software developer and engineer, with an additional
-          background in education, who creates applications for optimizing the
-          productivity and efficiency of tasks.
+          I am a full stack software developer and engineer, with a background
+          in K-12 education and technology integration, who creates applications
+          for optimizing the productivity and efficiency of tasks using the
+          technolgies below.
         </h3>
         <div className="grid grid-cols-3 place-items-center gap-5 pt-8">
           <div onMouseOver={htmlMouseOver} onMouseOut={htmlMouseOut}>
