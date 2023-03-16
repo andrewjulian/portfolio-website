@@ -8,10 +8,10 @@ body {
 }
 
 .fade-in {
-  transition: opacity 1.5s ease;
+  transition: opacity 2s ease;
 }
 
 .fade-out {
   opacity: 0;
-  transition: opacity 1.5s ease;
+  transition: opacity 2s ease;
 }

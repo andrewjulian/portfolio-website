@@ -5,7 +5,7 @@ import github from "../assets/github-mark-white.png";
 import medium from "../assets/medium-black-symbol.png";
 import "../index.css";
 
-const FADE_INTERVAL_MS = 2000;
+const FADE_INTERVAL_MS = 3000;
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2;
 const WORDS_TO_ANIMATE = [
   "Front End Developer",
@@ -39,11 +39,15 @@ const Hero = () => {
     }, WORD_CHANGE_INTERVAL_MS);
 
     return () => clearInterval(wordTimeout);
-  }, [wordOrder]);
+  }, []);
 
   return (
     <div>
-      <img src={hero} alt="hero" className="md:mr-4 sm:w-[50%] float-right" />
+      <img
+        src={hero}
+        alt="hero"
+        className="md:mr-4 sm:w-[50%] pr-4 float-right"
+      />
       <div className="px-[5%] py-[15%]">
         <h1 className="text-center text-[#0097b2] font-extrabold text-[5vw]">
           Andrew Julian
