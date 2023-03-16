@@ -14,10 +14,9 @@ const About = () => {
           Building technology to improve experiences
         </h1>
         <h3 className="text-white">
-          I am a full stack developer, with an additional background in
-          education, who creates web applications that are used to integrate
-          technology for optimizing productivity and efficiency of a variety of
-          tasks.
+          I am a full stack software developer and engineer, with an additional
+          background in education, who creates applications for optimizing the
+          productivity and efficiency of tasks.
         </h3>
       </div>
     </div>

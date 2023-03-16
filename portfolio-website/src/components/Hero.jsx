@@ -3,6 +3,7 @@ import hero from "../assets/heroimage.png";
 import linked from "../assets/linkedinlogo.png";
 import github from "../assets/github-mark-white.png";
 import medium from "../assets/medium-black-symbol.png";
+import Typed from "react-typed";
 import "../index.css";
 
 const Hero = () => {
@@ -14,12 +15,26 @@ const Hero = () => {
         className="md:mr-4 sm:w-[50%] pr-4 float-right"
       />
       <div className="px-[5%] py-[15%]">
-        <h1 className="text-center text-[#0097b2] font-extrabold text-[5vw]">
+        <h1 className="text-center text-[#0097b2] font-extrabold text-[6vw] sm:text-[5vw]">
           Andrew Julian
         </h1>
-        <h1 className="text-center text-[#0097b2] font-extrabold text-[3vw]">
-          Full Stack Developer
-        </h1>
+
+        <center>
+          <Typed
+            className="font-mono text-[#0097b2] text-[3vw] sm:text-[2vw]"
+            strings={[
+              "Software Engineer",
+              "Full Stack Developer",
+              "React Developer",
+              "JavaScript Developer",
+              "Ruby on Rails Developer",
+            ]}
+            typeSpeed={40}
+            backSpeed={60}
+            backDelay={1500}
+            loop={true}
+          />
+        </center>
 
         <div className="flex justify-center mt-2">
           <a href="https://github.com/Andrewjulian" target="blank">
