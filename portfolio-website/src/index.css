@@ -6,3 +6,8 @@ body {
   background-color: black;
   color: white;
 }
+
+.projectimage {
+  width: 400px;
+  height: 200px;
+}
