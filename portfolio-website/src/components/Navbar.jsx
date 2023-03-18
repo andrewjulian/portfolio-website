@@ -22,7 +22,6 @@ const Navbar = () => {
         <li className="p-4">Home</li>
         <li className="p-4">About</li>
         <li className="p-4">Projects</li>
-        <li className="p-4">Experience</li>
         <button className="border-2 rounded-xl border-[#0097b2] px-2 my-2  hover:bg-[#0097b2]">
           Contact
         </button>
@@ -43,7 +42,6 @@ const Navbar = () => {
           <li className="p-4 border-b border-[#0097b2]">Home</li>
           <li className="p-4 border-b border-[#0097b2]">About</li>
           <li className="p-4 border-b border-[#0097b2]">Projects</li>
-          <li className="p-4 border-b border-[#0097b2]">Experience</li>
           <li className="p-4">Contact</li>
         </ul>
       </div>
