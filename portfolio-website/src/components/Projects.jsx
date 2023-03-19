@@ -65,8 +65,8 @@ const newtechprojects = newtech.map((project) => {
 
 const Projects = () => {
   return (
-    <div className="my-5">
-      <h1 className="text-center text-[#0097b2] font-extrabold text-[6vw] sm:text-[5vw] my-3">
+    <div className="my-10">
+      <h1 className="text-center text-[#0097b2] font-extrabold text-[8vw] md:text-[5vw] ">
         Projects
       </h1>
       <div className="flex flex-col lg:flex-row items-center justify-center px-10">

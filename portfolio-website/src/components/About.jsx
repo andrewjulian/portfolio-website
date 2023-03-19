@@ -58,16 +58,19 @@ const About = () => {
         className="hidden sm:flex w-[40%] mx-[3%] rounded-2xl"
       />
       <div className="block sm:mr-[2%]">
-        <h1 className="text-center text-black sm:text-black italic font-bold text-[4vw] sm:text-[2vw] mt-4 py-auto">
-          Building technology to improve experiences
+        <h1 className="text-center text-black sm:text-black italic font-bold text-[4vw] sm:text-[2vw]  py-auto">
+          Building Technology For Improving Experiences
         </h1>
-        <h3 className="text-center text-lg text-[#0097b2] sm:text-[#0097b2] font-bold ">
-          I am a full stack software developer and engineer, with a background
-          in K-12 education and technology integration, who creates applications
-          for optimizing the productivity and efficiency of tasks using the
-          technolgies below.
+        <h3 className="text-center text-md text-[#0097b2] sm:text-[#0097b2] font-bold mb-4">
+          During more than a decade in education, I saw the impact of new
+          technologies on the teaching and learning experience. This inspired me
+          to become a full stack software engineer so that I could create
+          applications for improving the lives of others.
         </h3>
-        <div className="grid grid-cols-3 place-items-center gap-5 pt-8">
+        <h1 className="text-center text-black sm:text-black  font-bold text-[3vw] sm:text-[1.5vw] mt-2 py-auto">
+          Experience Creating With The Following Technologies:
+        </h1>
+        <div className="grid grid-cols-3 place-items-center gap-5 pt-4">
           <div onMouseOver={htmlMouseOver} onMouseOut={htmlMouseOut}>
             {htmlHover ? (
               <i className="text-[15vw] devicon-html5-plain colored m-5 sm:text-[6vw] devicon-html5-plain colored"></i>
