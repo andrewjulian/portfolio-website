@@ -69,7 +69,7 @@ const Projects = () => {
       <h1 className="text-center text-[#0097b2] font-extrabold text-[6vw] sm:text-[5vw] my-3">
         Projects
       </h1>
-      <div className="flex flex-col md:flex-row items-center justify-center px-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center px-10">
         {projectCards}
       </div>
       <h5 className=" mb-2 text-center  sm:text-center text-[#0097b2] font-extrabold text-[4vw] sm:text-[2vw] mt-4">

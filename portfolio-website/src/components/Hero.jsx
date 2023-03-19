@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import hero from "../assets/heroimage.png";
 import linked from "../assets/linkedinlogo.png";
 import github from "../assets/github-mark-white.png";
