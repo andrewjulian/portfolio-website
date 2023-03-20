@@ -7,7 +7,7 @@ const BackToTop = () => {
     <div>
       <Link
         to="navbar"
-        className="fixed bottom-5 right-10 cursor-pointer text-gray-500 hover:text-[#0097b2]"
+        className="fixed bottom-6 right-10 cursor-pointer text-gray-500  hover:text-[#0097b2]"
         spy={true}
         smooth={true}
         offset={0}
