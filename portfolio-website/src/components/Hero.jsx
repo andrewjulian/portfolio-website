@@ -11,7 +11,7 @@ import Fade from "react-reveal/Fade";
 const Hero = () => {
   return (
     <div id="hero">
-      <Fade duration="3000">
+      <Fade>
         <img
           src={hero}
           alt="hero"

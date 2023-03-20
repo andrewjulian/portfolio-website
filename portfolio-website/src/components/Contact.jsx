@@ -1,14 +1,46 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import github from "../assets/github-mark-white.png";
 import linked from "../assets/linkedinlogo.png";
 import medium from "../assets/medium-black-symbol.png";
-
+import emailjs from "@emailjs/browser";
 import Fade from "react-reveal/Fade";
 
 const Contact = () => {
+  const form = useRef();
+
+  const [user_name, setUser_name] = useState("");
+  const [user_email, setUser_email] = useState("");
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_wb48ho9",
+        "template_u4v7tlm",
+        form.current,
+        "0AoACuAncAwV4gUSt"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    setUser_name("");
+    setUser_email("");
+    setMessage("");
+    setSuccess(true);
+  };
+
   return (
     <div id="contact" className="antialiased bg-gray-300 px-[12.5%] py-10 ">
-      <div clasName="flex w-full min-h-screen">
+      <div className="flex w-full min-h-screen">
         <Fade>
           <div className="flex flex-col lg:flex-row lg:space-x-10 lg:space-y-0 space-y-4 w-full p-8 bg-[#0097b2] rounded-xl max-w-[75vw] items-center justify-center">
             <div className="flex flex-col justify-between">
@@ -58,17 +90,26 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full">
+            <div className="w-full text-black">
               <div className="bg-white rounded-xl shadow-lg p-8">
-                <form onSubmit="" className="flex flex-col space-y-4">
+                <form
+                  ref={form}
+                  onSubmit={sendEmail}
+                  className="flex flex-col space-y-4"
+                >
                   <div>
                     <label htmlFor="name" className="text-gray-700 font-bold">
                       Enter Your Name
                     </label>
                     <input
+                      onChange={(e) => {
+                        setUser_name(e.target.value);
+                        setSuccess(false);
+                      }}
+                      value={user_name}
                       type="text"
-                      name="name"
-                      id="name"
+                      name="user_name"
+                      id="user_name"
                       placeholder="Your name"
                       className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#0097b2] mt-2"
                     />
@@ -78,9 +119,14 @@ const Contact = () => {
                       Enter Your Email
                     </label>
                     <input
+                      onChange={(e) => {
+                        setUser_email(e.target.value);
+                        setSuccess(false);
+                      }}
+                      value={user_email}
                       type="text"
-                      name="email"
-                      id="email"
+                      name="user_email"
+                      id="user_email"
                       placeholder="Your email"
                       className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#0097b2] mt-2"
                     />
@@ -93,6 +139,11 @@ const Contact = () => {
                       Add Your Message
                     </label>
                     <textarea
+                      onChange={(e) => {
+                        setMessage(e.target.value);
+                        setSuccess(false);
+                      }}
+                      value={message}
                       name="message"
                       id="message"
                       rows="4"
@@ -100,9 +151,21 @@ const Contact = () => {
                       className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#0097b2] mt-2"
                     />
                   </div>
-                  <button className="inline-block self-end font-bold p-2 bg-[#0097b2] text-white rounded-md py-2">
+                  <button
+                    type="submit"
+                    className="inline-block self-end font-bold p-2 bg-[#0097b2] text-white rounded-md py-2"
+                  >
                     Send Message
                   </button>
+                  {success ? (
+                    <div
+                      class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+                      role="alert"
+                    >
+                      <span class="font-medium">Email Sent!</span> I will get
+                      back to you as soon as I can. Thanks for connecting!
+                    </div>
+                  ) : null}
                 </form>
               </div>
             </div>

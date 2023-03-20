@@ -45,7 +45,7 @@ const newtech = [
   {
     tech: "Habit Tracker",
     description:
-      "Utilize React and Node.js to create a habit tracker that allows users to track their habits and view their progress.",
+      "Utilize React and Node.js to create an application for tracking habits and viewing their progress.",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
@@ -57,12 +57,12 @@ const newtech = [
   },
 ];
 
-const projectCards = projects.map((project) => {
-  return <ProjectCard project={project} />;
+const projectCards = projects.map((project, id) => {
+  return <ProjectCard key={id} project={project} />;
 });
 
-const newtechprojects = newtech.map((project) => {
-  return <NewTechCard project={project} />;
+const newtechprojects = newtech.map((project, id) => {
+  return <NewTechCard key={id} project={project} />;
 });
 
 const Projects = () => {

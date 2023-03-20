@@ -9,8 +9,9 @@ const NewTechCard = ({ project }) => {
         src={image}
         alt={tech}
       />
-      <h1 className="text-[#0097b2] mr-2">{tech}:</h1>
-      <p>{description}</p>
+      <h1 className="text-[#0097b2] mr-2">
+        {tech}: <span className="text-white">{description}</span>
+      </h1>
     </div>
   );
 };
