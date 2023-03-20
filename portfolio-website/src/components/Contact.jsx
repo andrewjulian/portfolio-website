@@ -41,7 +41,7 @@ const Contact = () => {
   return (
     <div id="contact" className="antialiased bg-gray-300 px-[12.5%] py-10 ">
       <div className="flex w-full">
-        <Fade>
+        <Fade duration="3000">
           <div className="flex flex-col lg:flex-row lg:space-x-10 lg:space-y-0 space-y-4  p-8 bg-[#0097b2] rounded-xl max-w-[75vw] items-center justify-center">
             <div className="flex flex-col justify-between">
               <h1 className="text-4xl font-bold text-white ">Contact Me</h1>
