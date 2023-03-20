@@ -65,7 +65,7 @@ const newtechprojects = newtech.map((project) => {
 
 const Projects = () => {
   return (
-    <div className="my-10">
+    <div id="projects" className="my-10">
       <h1 className="text-center text-[#0097b2] font-extrabold text-[8vw] md:text-[5vw] ">
         Projects
       </h1>

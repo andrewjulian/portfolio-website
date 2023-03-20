@@ -47,7 +47,10 @@ const About = () => {
   };
 
   return (
-    <div className="flex bg-gray-300 justify-between w-full p-[5%] sm:mt-10">
+    <div
+      id="about"
+      className="flex bg-gray-300 justify-between w-full p-[5%] sm:mt-10"
+    >
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -73,42 +76,42 @@ const About = () => {
         <div className="grid grid-cols-3 place-items-center gap-5 pt-4">
           <div onMouseOver={htmlMouseOver} onMouseOut={htmlMouseOut}>
             {htmlHover ? (
-              <i className="text-[15vw] devicon-html5-plain colored m-5 sm:text-[6vw] devicon-html5-plain colored"></i>
+              <i className="text-[15vw] devicon-html5-plain colored m-5 sm:text-[6vw] devicon-html5-plain colored cursor-none"></i>
             ) : (
               <i className="text-[15vw] devicon-html5-plain m-5 sm:text-[6vw] devicon-html5-plain"></i>
             )}
           </div>
           <div onMouseOver={cssMouseOver} onMouseOut={cssMouseOut}>
             {cssHover ? (
-              <i className="text-[15vw] devicon-css3-plain colored m-5 sm:text-[6vw] devicon-css3-plain colored"></i>
+              <i className="text-[15vw] devicon-css3-plain colored m-5 sm:text-[6vw] devicon-css3-plain colored cursor-none"></i>
             ) : (
               <i className="text-[15vw] devicon-css3-plain m-5 sm:text-[6vw] devicon-css3-plain"></i>
             )}
           </div>
           <div onMouseOver={jsMouseOver} onMouseOut={jsMouseOut}>
             {jsHover ? (
-              <i className="text-[15vw] devicon-javascript-plain colored m-5 sm:text-[6vw] devicon-javascript-plain colored"></i>
+              <i className="text-[15vw] devicon-javascript-plain colored m-5 sm:text-[6vw] devicon-javascript-plain colored cursor-none"></i>
             ) : (
               <i className="text-[15vw] devicon-javascript-plain  m-5 sm:text-[6vw] devicon-javascript-plain"></i>
             )}
           </div>
           <div onMouseOver={reactMouseOver} onMouseOut={reactMouseOut}>
             {reactHover ? (
-              <i className="text-[15vw] devicon-react-original colored m-5 sm:text-[6vw] devicon-react-original colored"></i>
+              <i className="text-[15vw] devicon-react-original colored m-5 sm:text-[6vw] devicon-react-original colored cursor-none"></i>
             ) : (
               <i className="text-[15vw] devicon-react-original m-5 sm:text-[6vw] devicon-react-original"></i>
             )}
           </div>
           <div onMouseOver={rubyMouseOver} onMouseOut={rubyMouseOut}>
             {rubyHover ? (
-              <i className="text-[15vw] devicon-ruby-plain colored m-5 sm:text-[6vw] devicon-ruby-plain colored"></i>
+              <i className="text-[15vw] devicon-ruby-plain colored m-5 sm:text-[6vw] devicon-ruby-plain colored cursor-none"></i>
             ) : (
               <i className="text-[15vw] devicon-ruby-plain m-5 sm:text-[6vw] devicon-ruby-plain"></i>
             )}
           </div>
           <div onMouseOver={railsMouseOver} onMouseOut={railsMouseOut}>
             {railsHover ? (
-              <i className="text-[15vw] devicon-rails-plain colored m-5 sm:text-[6vw] devicon-rails-plain colored"></i>
+              <i className="text-[15vw] devicon-rails-plain colored m-5 sm:text-[6vw] devicon-rails-plain colored cursor-none"></i>
             ) : (
               <i className="text-[15vw] devicon-rails-plain m-5 sm:text-[6vw] devicon-rails-plain"></i>
             )}

@@ -5,7 +5,7 @@ import medium from "../assets/medium-black-symbol.png";
 
 const Contact = () => {
   return (
-    <div className="antialiased bg-gray-300 px-[12.5%] py-10 ">
+    <div id="contact" className="antialiased bg-gray-300 px-[12.5%] py-10 ">
       <div clasName="flex w-full min-h-screen">
         <div className="flex flex-col lg:flex-row lg:space-x-10 lg:space-y-0 space-y-4 w-full p-8 bg-[#0097b2] rounded-xl max-w-[75vw] items-center justify-center">
           <div className="flex flex-col justify-between">

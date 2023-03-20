@@ -8,7 +8,7 @@ import "../index.css";
 
 const Hero = () => {
   return (
-    <div>
+    <div id="hero">
       <img
         src={hero}
         alt="hero"

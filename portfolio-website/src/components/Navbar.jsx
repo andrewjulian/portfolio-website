@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-scroll";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
@@ -10,20 +11,78 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
+    <div
+      id="navbar"
+      className=" text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4  bg-black"
+    >
       <div className="flex text-center">
-        <img src={logo} className="h-10 w-10 mr-4" alt="logo" />
-        <h1 className="text-[#0097b2] font-semibold text-2xl mt-1">
-          Andrew Julian
-        </h1>
+        <Link
+          to="navbar"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          className="flex items-center cursor-pointer"
+        >
+          <img src={logo} className="h-10 w-10 mr-4" alt="logo" />
+          <h1 className="text-[#0097b2] font-semibold text-2xl mt-1">
+            Andrew Julian
+          </h1>
+        </Link>
       </div>
 
       <ul className="hidden md:flex">
-        <li className="p-4">Home</li>
-        <li className="p-4">About</li>
-        <li className="p-4">Projects</li>
+        <li className="p-4">
+          <Link
+            to="navbar"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            onClick={handleNav}
+            className="cursor-pointer"
+          >
+            Home
+          </Link>
+        </li>
+        <li className="p-4">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-10}
+            duration={500}
+            onClick={handleNav}
+            className="cursor-pointer"
+          >
+            About
+          </Link>
+        </li>
+        <li className="p-4">
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={500}
+            onClick={handleNav}
+            className="cursor-pointer"
+          >
+            Projects
+          </Link>
+        </li>
         <button className="border-2 rounded-xl border-[#0097b2] px-2 my-2  hover:bg-[#0097b2]">
-          Contact
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={handleNav}
+            className="cursor-pointer"
+          >
+            Contact
+          </Link>
         </button>
       </ul>
 
@@ -39,10 +98,58 @@ const Navbar = () => {
         }
       >
         <ul>
-          <li className="p-4 border-b border-[#0097b2]">Home</li>
-          <li className="p-4 border-b border-[#0097b2]">About</li>
-          <li className="p-4 border-b border-[#0097b2]">Projects</li>
-          <li className="p-4">Contact</li>
+          <li className="p-4 border-b border-[#0097b2]">
+            <Link
+              to="navbar"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+              onClick={handleNav}
+              className="cursor-pointer"
+            >
+              Home
+            </Link>
+          </li>
+          <li className="p-4 border-b border-[#0097b2]">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              onClick={handleNav}
+              className="cursor-pointer"
+            >
+              About
+            </Link>
+          </li>
+          <li className="p-4 border-b border-[#0097b2]">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={500}
+              onClick={handleNav}
+              className="cursor-pointer"
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={handleNav}
+              className="cursor-pointer"
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
