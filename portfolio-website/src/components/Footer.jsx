@@ -32,21 +32,6 @@ const Footer = () => {
               <TbBrandTailwind className="w-10 h-10" />
             </a>
           </li>
-          <li className="mx-4 hover:text-[#0097b2]">
-            <Link
-              to="navbar"
-              className="flex justify-center items-center cursor-pointer"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              <div className="flex justify-center items-center">
-                <p className="mr-2"> Back to Top</p>
-                <BsArrowUpCircleFill className="w-8 h-8" />
-              </div>
-            </Link>
-          </li>
         </ul>
       </div>
     </div>
