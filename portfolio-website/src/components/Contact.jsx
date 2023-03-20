@@ -17,10 +17,10 @@ const Contact = () => {
                 a focus on the front-end or full-stack, but I am also open to
                 exploring other opportunities.
               </p>
-              <p className="pt-2 text-white text-lg tracking-wide mb-10">
-                Whether you have a question or just want to say hi, use the form
-                to send me a message and I will get back to you as soon as
-                possible!
+              <p className="pt-2 text-white text-lg tracking-wide mb-5">
+                Whether you have a question or just want to say "Hi &#128075;",
+                use the form to send me a message and I will get back to you as
+                soon as possible!
               </p>
               <div className="flex flex-col space-y-4">
                 <div className="inline-flex space-x-2 items-center">
