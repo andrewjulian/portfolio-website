@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className=" text-white flex justify-between items-center h-24  mx-auto px-10  bg-black"
+      className=" text-white flex justify-between items-center h-24  mx-auto px-4 sm:px-10  bg-black"
     >
       <div className="flex text-center">
         <Link
@@ -86,7 +86,7 @@ const Navbar = () => {
         </button>
       </ul>
 
-      <div onClick={handleNav} className="block md:hidden">
+      <div onClick={handleNav} className="block m-2 md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
