@@ -13,19 +13,16 @@ const ProjectCard = ({ project }) => {
           <div className="font-bold text-xl text-black mb-2">{title}</div>
           <p className="text-gray-700 text-base">{description}</p>
         </div>
-        <div className=" flex px-6 bg-[#0097b2] justify-center items-center">
+        <div className=" flex px-2 sm:px-6 bg-[#0097b2] justify-center items-center">
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-2 ">
             {tags[0]}
           </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-2 ">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 my-2 ">
             {tags[1]}
           </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-2 ">
-            {tags[2]}
-          </span>
-          <span className="flex items-end justify-end px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-2">
+          <span className="flex items-end justify-end px-3 py-1 text-sm font-semibold text-gray-700  my-2">
             <a href={repo} target="blank">
-              <img src={github} alt="github" className="w-8 h-8" />
+              <img src={github} alt="github" className="w-8 sm:h-8" />
             </a>
           </span>
         </div>
