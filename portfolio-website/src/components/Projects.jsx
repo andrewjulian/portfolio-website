@@ -5,8 +5,6 @@ import allinai from "../assets/allinai.png";
 import portfolioimage from "../assets/portfolioimage.png";
 import NewTechCard from "./NewTechCard";
 
-import Fade from "react-reveal/Fade";
-
 const projects = [
   {
     title: "AsyncEdu",
@@ -74,14 +72,12 @@ const Projects = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center px-10">
         {projectCards}
       </div>
-      <Fade bottom>
-        <h5 className=" mb-2 text-center  sm:text-center text-[#0097b2] font-extrabold text-[4vw] sm:text-[2vw] mt-4">
-          In the Works...
-        </h5>
-        <div className="flex flex-col items-center justify-center">
-          {newtechprojects}
-        </div>
-      </Fade>
+      <h5 className=" mb-2 text-center  sm:text-center text-[#0097b2] font-extrabold text-[4vw] sm:text-[2vw] mt-4">
+        In the Works...
+      </h5>
+      <div className="flex flex-col items-center justify-center">
+        {newtechprojects}
+      </div>
     </div>
   );
 };
