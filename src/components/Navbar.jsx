@@ -22,7 +22,7 @@ const Navbar = () => {
           smooth={true}
           offset={0}
           duration={500}
-          className="flex items-center cursor-pointer"
+          className="flex items-center cursor-pointer "
         >
           <img src={logo} className="h-10 w-10 mr-4" alt="logo" />
           <h1 className="text-[#0097b2] font-semibold text-2xl mt-1">
@@ -40,7 +40,7 @@ const Navbar = () => {
             offset={-50}
             duration={500}
             onClick={handleNav}
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-[#0097b2]"
           >
             Home
           </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
             offset={-10}
             duration={500}
             onClick={handleNav}
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-[#0097b2]"
           >
             About
           </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
             offset={-40}
             duration={500}
             onClick={handleNav}
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-[#0097b2]"
           >
             Projects
           </Link>
@@ -79,19 +79,11 @@ const Navbar = () => {
             offset={0}
             duration={500}
             onClick={handleNav}
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-[#0097b2]"
           >
             Contact
           </Link>
         </li>
-        <button className="border-2 rounded-xl border-[#0097b2] px-2 my-2  hover:bg-[#0097b2]">
-          <a
-            href="https://drive.google.com/file/d/1_fX6llUqMs7BM4C-P06EXgJlyShnG9eR/view?usp=sharing"
-            target="_blank"
-          >
-            Resume
-          </a>
-        </button>
       </ul>
 
       <div onClick={handleNav} className="block m-2 md:hidden">
@@ -151,7 +143,7 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li className="p-4 border-b border-[#0097b2]">
+          <li className="p-4 ">
             <Link
               to="contact"
               spy={true}
@@ -163,14 +155,6 @@ const Navbar = () => {
             >
               Contact
             </Link>
-          </li>
-          <li className="p-4">
-            <a
-              href="https://drive.google.com/file/d/1_fX6llUqMs7BM4C-P06EXgJlyShnG9eR/view?usp=sharing"
-              target="_blank"
-            >
-              Resume
-            </a>
           </li>
         </ul>
       </div>
