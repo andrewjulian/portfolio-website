@@ -71,7 +71,7 @@ const Navbar = () => {
             Projects
           </Link>
         </li>
-        <button className="border-2 rounded-xl border-[#0097b2] px-2 my-2  hover:bg-[#0097b2]">
+        <li className="p-4">
           <Link
             to="contact"
             spy={true}
@@ -83,6 +83,14 @@ const Navbar = () => {
           >
             Contact
           </Link>
+        </li>
+        <button className="border-2 rounded-xl border-[#0097b2] px-2 my-2  hover:bg-[#0097b2]">
+          <a
+            href="https://drive.google.com/file/d/1_fX6llUqMs7BM4C-P06EXgJlyShnG9eR/view?usp=sharing"
+            target="_blank"
+          >
+            Resume
+          </a>
         </button>
       </ul>
 
@@ -143,7 +151,7 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 border-b border-[#0097b2]">
             <Link
               to="contact"
               spy={true}
@@ -155,6 +163,14 @@ const Navbar = () => {
             >
               Contact
             </Link>
+          </li>
+          <li className="p-4">
+            <a
+              href="https://drive.google.com/file/d/1_fX6llUqMs7BM4C-P06EXgJlyShnG9eR/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
           </li>
         </ul>
       </div>
