@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./index.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
