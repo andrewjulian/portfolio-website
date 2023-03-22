@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className=" text-white flex justify-between items-center h-24  mx-auto px-4 sm:px-10  bg-black"
+      className="sticky top-0 z-30 text-white flex justify-between items-center h-24  mx-auto px-4 sm:px-10  bg-black"
     >
       <div className="flex text-center">
         <Link
@@ -34,10 +34,10 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         <li className="p-4">
           <Link
-            to="navbar"
+            to="hero"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-100}
             duration={500}
             onClick={handleNav}
             className="cursor-pointer hover:text-[#0097b2]"
@@ -50,7 +50,7 @@ const Navbar = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-10}
+            offset={-100}
             duration={500}
             onClick={handleNav}
             className="cursor-pointer hover:text-[#0097b2]"
@@ -63,7 +63,7 @@ const Navbar = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-40}
+            offset={-100}
             duration={500}
             onClick={handleNav}
             className="cursor-pointer hover:text-[#0097b2]"
@@ -76,7 +76,7 @@ const Navbar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             duration={500}
             onClick={handleNav}
             className="cursor-pointer hover:text-[#0097b2]"
@@ -106,10 +106,10 @@ const Navbar = () => {
           </li>
           <li className="p-4 border-b border-[#0097b2]">
             <Link
-              to="navbar"
+              to="hero"
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={-100}
               duration={500}
               onClick={handleNav}
               className="cursor-pointer"
@@ -122,7 +122,7 @@ const Navbar = () => {
               to="about"
               spy={true}
               smooth={true}
-              offset={-10}
+              offset={-100}
               duration={500}
               onClick={handleNav}
               className="cursor-pointer"
@@ -135,7 +135,7 @@ const Navbar = () => {
               to="projects"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-100}
               duration={500}
               onClick={handleNav}
               className="cursor-pointer"
@@ -148,7 +148,7 @@ const Navbar = () => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-100}
               duration={500}
               onClick={handleNav}
               className="cursor-pointer"
