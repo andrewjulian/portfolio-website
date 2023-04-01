@@ -1,8 +1,9 @@
-import React from "react";
-import ProjectCard from "./ProjectCard";
+import React, { useState } from "react";
+import ProjectsSlider from "./ProjectsSlider";
 import asyncedu from "../assets/asyncedu.png";
 import allinai from "../assets/allinai.png";
 import portfolioimage from "../assets/portfolioimage.png";
+import readit from "../assets/readit.png";
 import NewTechCard from "./NewTechCard";
 
 const projects = [
@@ -21,6 +22,14 @@ const projects = [
     image: allinai,
     repo: "https://github.com/andrewjulian/all-in-ai-website-v3",
     tags: ["HTML5", "CSS3", "Bootstrap"],
+  },
+  {
+    title: "Readit",
+    description:
+      "This is a forum-style single page application where users can post and remove questions, as well as comment on other users' questions and comments.",
+    image: readit,
+    repo: "https://github.com/andrewjulian/phase-4-project",
+    tags: ["React", "Ruby on Rails"],
   },
   {
     title: "Portfolio Website",
@@ -55,22 +64,35 @@ const newtech = [
   },
 ];
 
-const projectCards = projects.map((project, id) => {
-  return <ProjectCard key={id} project={project} />;
-});
-
 const newtechprojects = newtech.map((project, id) => {
   return <NewTechCard key={id} project={project} />;
 });
 
 const Projects = () => {
+  const [current, setCurrent] = useState(0);
+
+  const length = projects.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
   return (
     <div id="projects" className="my-10">
       <h1 className="text-center text-[#0097b2] font-extrabold text-[8vw] md:text-[5vw] ">
         Projects
       </h1>
-      <div className="flex flex-col lg:flex-row items-center justify-center px-10">
-        {projectCards}
+      <div className="px-10">
+        <ProjectsSlider
+          projects={projects}
+          current={current}
+          prevSlide={prevSlide}
+          nextSlide={nextSlide}
+        />
       </div>
       <h5 className=" mb-2 text-center  sm:text-center text-[#0097b2] font-extrabold text-[4vw] sm:text-[2vw] mt-4">
         In the Works...
