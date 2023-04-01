@@ -12,16 +12,16 @@ const ProjectsSlider = ({ current, projects, prevSlide, nextSlide }) => {
   return (
     <section className="relative h-100vh flex justify-center items-center">
       <FaArrowAltCircleLeft
-        className="absolute top-[50%] left-[32px] z-10 cursor-pointer text-white text-[1.5rem] hover:text-[#0097b2] "
+        className="absolute top-[50%] left-[5px]   z-10 cursor-pointer text-white text-[1.5rem] hover:text-[#0097b2] "
         onClick={prevSlide}
       />
       <FaArrowAltCircleRight
-        className="absolute top-[50%] right-[32px] z-10 cursor-pointer text-lg  text-white text-[1.5rem] hover:text-[#0097b2] "
+        className="absolute top-[50%] right-[5px]  z-10 cursor-pointer   text-white text-[1.5rem] hover:text-[#0097b2] "
         onClick={nextSlide}
       />
       <div>
-        <div className="flex flex-col lg:flex-row items-center justify-center px-10">
-          <div>
+        <div className="xl:flex flex-row items-center justify-center px-10">
+          <div className="hidden xl:flex ">
             {current === 0
               ? projects[length - 1] && (
                   <ProjectCard project={projects[length - 1]} />
@@ -33,7 +33,7 @@ const ProjectsSlider = ({ current, projects, prevSlide, nextSlide }) => {
           <div>
             {projects[current] && <ProjectCard project={projects[current]} />}
           </div>
-          <div>
+          <div className="hidden xl:flex ">
             {current === length - 1
               ? projects[0] && <ProjectCard project={projects[0]} />
               : projects[current + 1] && (
