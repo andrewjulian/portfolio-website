@@ -6,7 +6,7 @@ import "../index.css";
 const ProjectCard = ({ project }) => {
   const { title, description, image, repo, tags } = project;
   return (
-    <div className="max-w-xs m-2 my-2 rounded-xl overflow-hidden shadow-lg xl:hover:scale-110 duration-300">
+    <div className="max-w-xs h-auto m-2 my-2 rounded-xl overflow-hidden shadow-lg xl:hover:scale-110 duration-300">
       <div>
         <img
           className=" max-w-xs h-[250px]  2xl:w-[400px] xl:h-[250px]"
