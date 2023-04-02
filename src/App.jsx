@@ -10,19 +10,20 @@ import BackToTop from "./components/BackToTop";
 import Loading from "./components/Loading";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoading = () => {
-    setIsLoading(false);
-  };
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("load", handleLoading);
-    return () => window.removeEventListener("load", handleLoading);
+    window.addEventListener("load", () => {
+      setLoaded(true);
+      console.log("loaded");
+    });
   }, []);
 
-  return !isLoading ? (
+  return (
     <div>
+      !loaded ? (
+      <Loading />
+      ) : (
       <Navbar />
       <Hero />
       <BackToTop />
@@ -30,9 +31,8 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      );
     </div>
-  ) : (
-    <Loading />
   );
 }
 
