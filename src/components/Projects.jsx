@@ -13,7 +13,7 @@ const projects = [
       "AsyncEdu is a full stack chat-based application that can be used for asynchronous instructional support, communication, and collaboration between teachers and students.",
     image: asyncedu,
     repo: "https://github.com/andrewjulian/phase-5-project",
-    tags: ["React", "Rails", "PostGreSQL"],
+    tags: ["React", "Ruby on Rails", "PostGreSQL"],
   },
   {
     title: "All In AI Website",
@@ -21,7 +21,7 @@ const projects = [
       "This website was created for All in AI, a non-profit organization that aims to increase diversity in the field of AI and provide access to AI education for underrepresented groups.",
     image: allinai,
     repo: "https://github.com/andrewjulian/all-in-ai-website-v3",
-    tags: ["HTML5", "CSS3", "Bootstrap"],
+    tags: ["Javascript", "Bootstrap"],
   },
   {
     title: "Readit",
@@ -34,7 +34,7 @@ const projects = [
   {
     title: "Portfolio Website",
     description:
-      "This website shows growth in design and development using a different technology stack compared to the other websites created in the past.",
+      "This website shows growth in design and development as it was built using a different technology stack compared to the other websites created in the past.",
     image: portfolioimage,
     repo: "https://github.com/andrewjulian/portfolio-website",
     tags: ["React", "TailwindCSS", "Vite"],

@@ -12,14 +12,14 @@ const ProjectsSlider = ({ current, projects, prevSlide, nextSlide }) => {
   return (
     <section className="relative h-100vh flex justify-center items-center">
       <FaArrowAltCircleLeft
-        className="absolute top-[50%] left-[5px]   z-10 cursor-pointer text-white text-[1.5rem] hover:text-[#0097b2] "
+        className="absolute top-[44%]  xl:top-[50%] left-[5px]  z-10 cursor-pointer text-[#0097b2]  xl:text-white text-[1.5rem]  "
         onClick={prevSlide}
       />
       <FaArrowAltCircleRight
-        className="absolute top-[50%] right-[5px]  z-10 cursor-pointer   text-white text-[1.5rem] hover:text-[#0097b2] "
+        className="absolute top-[44%] xl:top-[50%] right-[5px]  z-10 cursor-pointer  text-[#0097b2]   xl:text-white text-[1.5rem] xl:hover:text-[#0097b2] "
         onClick={nextSlide}
       />
-      <div>
+      <div className="px-10">
         <div className="xl:flex flex-row items-center justify-center px-10">
           <div className="hidden xl:flex ">
             {current === 0
