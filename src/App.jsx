@@ -12,21 +12,16 @@ import Loading from "./components/Loading";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  function someRequest() {
-    return new Promise((resolve) => setTimeout(() => resolve(), 2500));
-  }
+  const handleLoading = () => {
+    setIsLoading(false);
+  };
 
   useEffect(() => {
-    someRequest().then(() => {
-      setIsLoading(!isLoading);
-    });
+    window.addEventListener("load", handleLoading);
+    return () => window.removeEventListener("load", handleLoading);
   }, []);
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
-  return (
+  return !isLoading ? (
     <div>
       <Navbar />
       <Hero />
@@ -36,6 +31,8 @@ function App() {
       <Contact />
       <Footer />
     </div>
+  ) : (
+    <Loading />
   );
 }
 
