@@ -44,10 +44,12 @@ const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 const Loading = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="mx-auto my-auto text-center">
-        <ThreeBody size={100} color="#0097b2" />
-        <h1 className="text-xl text-[#0097b2] font-bold mt-4">
+    <div className="flex items-center justify-center h-[60vh]">
+      <div className="mx-auto my-auto text-center ">
+        <div className="my-10">
+          <ThreeBody size={100} color="#0097b2" />
+        </div>
+        <h1 className="text-md  sm:text-xl text-[#0097b2] font-bold mx-10">
           "{randomQuote.quote}"
           <br />- {randomQuote.author}
         </h1>
