@@ -19,11 +19,8 @@ function App() {
     });
   }, []);
 
-  return (
+  return loaded ? (
     <div>
-      !loaded ? (
-      <Loading />
-      ) : (
       <Navbar />
       <Hero />
       <BackToTop />
@@ -31,7 +28,10 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      );
+    </div>
+  ) : (
+    <div>
+      <Loading />
     </div>
   );
 }
