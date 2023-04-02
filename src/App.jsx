@@ -13,9 +13,9 @@ function App() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    window.onload = () => {
+    window.addEventListener("load", () => {
       setLoaded(true);
-    };
+    });
   }, []);
 
   return loaded ? (

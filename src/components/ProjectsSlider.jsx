@@ -33,7 +33,7 @@ const ProjectsSlider = ({ current, projects, prevSlide, nextSlide }) => {
           <div>
             {projects[current] && <ProjectCard project={projects[current]} />}
           </div>
-          <div className="hidden 2xl:flex ">
+          <div className="hidden xl:flex ">
             {current === length - 1
               ? projects[0] && <ProjectCard project={projects[0]} />
               : projects[current + 1] && (
