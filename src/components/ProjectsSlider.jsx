@@ -31,7 +31,7 @@ const ProjectsSlider = ({
         className="absolute top-[50%] right-[-30px]  sm:right-[5px]  z-10 cursor-pointer  text-white text-[1.5rem] md:hover:text-[#0097b2]  "
         onClick={nextSlide}
       />
-      <Zoom>
+      <Zoom duration={2000}>
         <div className="px-10 ">
           <Fade cascade when={show} duration={2000}>
             <div className="flex flex-row items-center justify-center px-10">
