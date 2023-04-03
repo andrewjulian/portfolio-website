@@ -44,7 +44,7 @@ const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 const Loading = () => {
   return (
-    <div className="flex items-center justify-center h-[60vh]">
+    <div className="flex items-center justify-center h-[60vh] ease-out duration-500">
       <div className="mx-auto my-auto text-center ">
         <div className="my-10">
           <ThreeBody size={100} color="#0097b2" />

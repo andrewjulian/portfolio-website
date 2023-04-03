@@ -8,30 +8,21 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 import Loading from "./components/Loading";
+import Fade from "react-reveal/Fade";
 
 function App() {
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    window.setTimeout(() => {
-      setLoaded(true);
-    }, 5000);
-  }, []);
-
-  return loaded ? (
-    <div>
-      <Navbar />
-      <Hero />
-      <BackToTop />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
-  ) : (
-    <div>
-      <Loading />
-    </div>
+  return (
+    <Fade timeout="4500">
+      <div>
+        <Navbar />
+        <Hero />
+        <BackToTop />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </Fade>
   );
 }
 
