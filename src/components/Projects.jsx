@@ -70,15 +70,18 @@ const newtechprojects = newtech.map((project, id) => {
 
 const Projects = () => {
   const [current, setCurrent] = useState(0);
+  const [show, setShow] = useState(true);
 
   const length = projects.length;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
+    setShow(false);
   };
 
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
+    setShow(false);
   };
 
   return (
@@ -88,6 +91,8 @@ const Projects = () => {
       </h1>
       <div className="px-10">
         <ProjectsSlider
+          show={show}
+          setShow={setShow}
           projects={projects}
           current={current}
           prevSlide={prevSlide}

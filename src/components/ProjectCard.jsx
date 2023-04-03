@@ -1,12 +1,11 @@
 import React from "react";
 import github from "../assets/github-mark-white.png";
 import "../index.css";
-//import Zoom from "react-reveal/Zoom";
 
 const ProjectCard = ({ project }) => {
   const { title, description, image, repo, tags } = project;
   return (
-    <div className="max-w-xs h-auto m-4 my-2 rounded-xl overflow-hidden shadow-lg xl:hover:scale-110 duration-300">
+    <div className="max-w-xs h-auto m-4 my-2 rounded-xl overflow-hidden shadow-lg xl:hover:scale-110  ease-in-out duration-300">
       <div>
         <img
           className=" max-w-xs h-[250px]  2xl:w-[400px] xl:h-[250px]"
