@@ -16,10 +16,18 @@ const Hero = () => {
           alt="hero"
           className="md:mr-4 sm:w-[50%] pr-4 float-right"
         />
-        <div className="px-[5%] py-[15%]">
+        <div className="px-[5%] py-[14%]">
           <h1 className="text-center text-[#0097b2] font-extrabold text-[6vw] sm:text-[5vw]">
             Andrew Julian
           </h1>
+
+          <div className="flex justify-center text-center mt-3 mb-5">
+            <h4 className="text-[20px]">
+              Creating functional and reponsive web applications, games, and
+              websites with a focus on helping users improve their daily
+              experiences.
+            </h4>
+          </div>
 
           <center>
             <Typed
@@ -40,19 +48,19 @@ const Hero = () => {
 
           <div className="flex justify-center mt-2">
             <a href="https://github.com/Andrewjulian" target="blank">
-              <img src={github} alt="github" className="h-[5vw] w-auto m-2" />
+              <img src={github} alt="github" className="h-10 w-auto m-2" />
             </a>
             <a
               href="https://www.linkedin.com/in/andrewjohnjulian/"
               target="blank"
             >
-              <img src={linked} alt="linked" className="h-[5vw] w-auto m-2" />
+              <img src={linked} alt="linked" className="h-10 w-auto m-2" />
             </a>
             <a href="https://medium.com/@andrewjjulian" target="blank">
               <img
                 src={medium}
                 alt="medium"
-                className="h-[5vw] w-[5vw] rounded-full bg-white  m-2"
+                className="h-10 w-10 rounded-full bg-white  m-2"
               />
             </a>
           </div>
