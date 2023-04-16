@@ -109,7 +109,7 @@ const Navbar = () => {
               to="hero"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-500}
               duration={500}
               onClick={handleNav}
               className="cursor-pointer"
