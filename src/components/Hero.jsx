@@ -16,22 +16,22 @@ const Hero = () => {
           alt="hero"
           className="md:mr-4 sm:w-[50%] pr-4 float-right"
         />
-        <div className="px-[5%] py-[14%]">
-          <h1 className="text-center text-[#0097b2] font-extrabold text-[9vw] sm:text-[5vw]">
+        <div className="px-[5%] py-[14%] sm:ml-5">
+          <h1 className="text-center text-[#0097b2] font-extrabold text-[7vw] sm:text-[5vw]">
             Andrew Julian
           </h1>
 
-          <div className="flex justify-center text-center mt-3 mb-5">
-            <h4 className="text-[15px]">
-              Creating functional and reponsive web applications, games, and
-              websites with a focus on helping users improve their daily
-              experiences.
+          <div className="flex font-mono justify-center text-center px:5 mt-3 mb-5">
+            <h4 className="text-[15px] sm:text-[1.25vw]">
+              Software Engineer, with over a decade in K-12 Education, building
+              responsive and user friendly full stack web applications, games,
+              and websites.
             </h4>
           </div>
 
           <center>
             <Typed
-              className="font-mono text-[#0097b2] text-[5vw] sm:text-[3vw]"
+              className="font-mono text-[#0097b2] text-[5vw] sm:text-[2.5vw]"
               strings={[
                 "Software Engineer",
                 "Full Stack Developer",

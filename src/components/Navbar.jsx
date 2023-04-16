@@ -20,7 +20,7 @@ const Navbar = () => {
           to="navbar"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-70}
           duration={500}
           className="flex items-center cursor-pointer "
         >
@@ -37,7 +37,7 @@ const Navbar = () => {
             to="hero"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-70}
             duration={500}
             onClick={handleNav}
             className="cursor-pointer hover:text-[#0097b2]"
@@ -109,7 +109,7 @@ const Navbar = () => {
               to="hero"
               spy={true}
               smooth={true}
-              offset={-500}
+              offset={-100}
               duration={500}
               onClick={handleNav}
               className="cursor-pointer"
