@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import codeone from "../assets/navbarcode.png";
 import Fade from "react-reveal/Fade";
 
@@ -32,17 +32,17 @@ const About = () => {
             <i className="text-[15vw] devicon-react-original colored m-5 sm:text-[6vw] devicon-react-original colored cursor-none"></i>
             <i className="text-[15vw] devicon-ruby-plain colored m-5 sm:text-[6vw] devicon-ruby-plain colored cursor-none"></i>
             <i className="text-[15vw] devicon-rails-plain colored m-5 sm:text-[6vw] devicon-rails-plain colored cursor-none"></i>
-            <i className="text-[15vs] devicon-nodejs-plain colored m-5 sm:text-[6vw] devicon-nodejs-plain colored cursor-none"></i>
-            <i className="text-[15vs] devicon-express-original colored m-5 sm:text-[6vw] devicon-express-original colored cursor-none"></i>
-            <i className="text-[15vs] devicon-mongodb-plain colored m-5 sm:text-[6vw] devicon-mongodb-plain colored cursor-none"></i>
+            <i className="text-[15vw] devicon-nodejs-plain colored m-5 sm:text-[6vw] devicon-nodejs-plain colored cursor-none"></i>
+            <i className="text-[15vw] devicon-express-original colored m-5 sm:text-[6vw] devicon-express-original colored cursor-none"></i>
+            <i className="text-[15vw] devicon-mongodb-plain colored m-5 sm:text-[6vw] devicon-mongodb-plain colored cursor-none"></i>
             <img
               className="text-[15vs] m-5 sm:text-[6vw] cursor-none"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
             />
             <i className="text-[15vw] devicon-html5-plain colored m-5 sm:text-[6vw] devicon-html5-plain colored cursor-none"></i>
             <i className="text-[15vw] devicon-css3-plain colored m-5 sm:text-[6vw] devicon-css3-plain colored cursor-none"></i>
-            <i className="text-[15vs] devicon-tailwindcss-plain colored m-5 sm:text-[6vw] devicon-tailwindcss-plain colored cursor-none"></i>
-            <i className="text-[15vs] devicon-bootstrap-plain colored m-5 sm:text-[6vw] devicon-bootstrap-plain colored cursor-none"></i>
+            <i className="text-[15vw] devicon-tailwindcss-plain colored m-5 sm:text-[6vw] devicon-tailwindcss-plain colored cursor-none"></i>
+            <i className="text-[15vw] devicon-bootstrap-plain colored m-5 sm:text-[6vw] devicon-bootstrap-plain colored cursor-none"></i>
           </div>
         </div>
       </Fade>
