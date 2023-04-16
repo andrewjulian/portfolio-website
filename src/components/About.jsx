@@ -21,8 +21,8 @@ const About = () => {
       </Fade>
       <Fade right>
         <div className="block sm:mr-[2%]">
-          <h1 className="text-center text-black sm:text-black  font-bold text-[3vw] sm:text-[1.5vw] mt-2 py-auto">
-            Experience Creating With The Following Technologies:
+          <h1 className="text-center text-black sm:text-black  font-bold text-[7vw] sm:text-[2vw] mt-2 py-auto">
+            Experience in Creating Applications Using:
           </h1>
           <div className="grid grid-cols-4 place-items-center gap-5 pt-4">
             <img

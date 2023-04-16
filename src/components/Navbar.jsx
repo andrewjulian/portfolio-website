@@ -20,7 +20,7 @@ const Navbar = () => {
           to="navbar"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-100}
           duration={500}
           className="flex items-center cursor-pointer "
         >
