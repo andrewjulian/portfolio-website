@@ -10,7 +10,7 @@ import Fade from "react-reveal/Fade";
 const Hero = () => {
   return (
     <Fade>
-      <div id="hero">
+      <div id="hero" className="mt-[-10px]">
         <img
           src={hero}
           alt="hero"
