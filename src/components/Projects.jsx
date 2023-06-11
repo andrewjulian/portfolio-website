@@ -50,15 +50,16 @@ const newtech = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
-    tech: "Habit Tracker",
+    tech: "Digital: Thoughtful Planning",
     description:
-      "Utilize React and Node.js to create an application for tracking habits and viewing their progress.",
+      "Utilize React and Node.js to create an digital version of the Ugmonk Analog Task Management System.",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
   {
     tech: "Machine Learning",
-    description: "Utilize Python to create a machine learning model.",
+    description:
+      "Create Content regarding Machine Learning and AI for the All In AI non-profit organization.",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
