@@ -23,9 +23,9 @@ const Hero = () => {
 
           <div className="flex font-mono justify-center text-center px:5 mt-3 mb-5">
             <h4 className="text-[15px] sm:text-[1.25vw]">
-              Software Engineer, with over a decade in K-12 Education, building
-              responsive and user friendly full stack web applications, games,
-              and websites.
+              Results oriented Software Engineer focused on creating frontend,
+              backend, and full stack solutions in collaboration with diverse
+              teams and stakeholders to produce high-quality products.
             </h4>
           </div>
 
@@ -35,9 +35,11 @@ const Hero = () => {
               strings={[
                 "Software Engineer",
                 "Full Stack Developer",
-                "React Developer",
-                "JavaScript Developer",
-                "Ruby on Rails Developer",
+                "Frontend Developer",
+                "Backend Developer",
+                "Database and API Developer",
+                "Technology Enthusiast",
+                "Lifelong Learner",
               ]}
               typeSpeed={40}
               backSpeed={60}
