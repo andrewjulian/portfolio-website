@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProjectsSlider from "./ProjectsSlider";
 import asyncedu from "../assets/asyncedu.png";
 import allinai from "../assets/allinai.png";
-import portfolioimage from "../assets/portfolioimage.png";
+import digital from "../assets/digital.png";
 import readit from "../assets/readit.png";
 import NewTechCard from "./NewTechCard";
 
@@ -32,12 +32,12 @@ const projects = [
     tags: ["React", "Ruby on Rails"],
   },
   {
-    title: "Portfolio Website",
+    title: "Digital: Thoughtful Planning",
     description:
-      "This website shows growth in design and development as it was built using a different technology stack compared to the other websites created in the past.",
-    image: portfolioimage,
-    repo: "https://github.com/andrewjulian/portfolio-website",
-    tags: ["React", "TailwindCSS", "Vite"],
+      "This web-application utilizes the MERN (MongoDB, Express, React, NodeJS) stack in order to create a digital version of the Ugmonk Analog Task System.",
+    image: digital,
+    repo: "https://github.com/andrewjulian/mern-ugmonk-digital",
+    tags: ["MERN", "RWD "],
   },
 ];
 
