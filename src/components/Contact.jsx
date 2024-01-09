@@ -41,11 +41,14 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="antialiased bg-gray-300 px-[12.5%] py-10 ">
+    <div
+      id="contact"
+      className="antialiased bg-gray-300 px-[120px]  py-10 "
+    >
       <Fade>
         <div className="flex w-full">
-          <div className="flex flex-col lg:flex-row lg:space-x-10 lg:space-y-0 space-y-4  p-8 bg-[#0097b2] rounded-xl max-w-[75vw] items-center justify-center">
-            <div className="flex flex-col justify-between">
+          <div className="flex flex-col lg:flex-row lg:space-x-10 lg:space-y-0 space-y-4  p-8 bg-[#0097b2] rounded-xl  items-center justify-center">
+            <div className="flex flex-col justify-between mr-10">
               <h1 className="text-4xl font-bold text-white ">Contact Me</h1>
               <p className="pt-2 text-white text-lg tracking-wide">
                 I'm currently looking for a new opportunity, my inbox is always
@@ -64,20 +67,34 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/andrewjohnjulian/"
                     target="blank"
                   >
-                    <img src={linked} alt="linked" className="w-8 h-8 m-2" />
+                    <img
+                      src={linked}
+                      alt="linked"
+                      className="w-8 h-8 m-2"
+                    />
                   </a>
                   <span className="text-white">
                     Connect with Me on LinkedIn
                   </span>
                 </div>
                 <div className="inline-flex space-x-2 items-center ">
-                  <a href="https://github.com/Andrewjulian" target="blank">
-                    <img src={github} alt="github" className="w-8 h-8 m-2" />
+                  <a
+                    href="https://github.com/Andrewjulian"
+                    target="blank"
+                  >
+                    <img
+                      src={github}
+                      alt="github"
+                      className="w-8 h-8 m-2"
+                    />
                   </a>
                   <span className="text-white">Explore My Github</span>
                 </div>
                 <div className="inline-flex space-x-2 items-center ">
-                  <a href="https://medium.com/@andrewjjulian" target="blank">
+                  <a
+                    href="https://medium.com/@andrewjjulian"
+                    target="blank"
+                  >
                     <img
                       src={medium}
                       alt="medium"
@@ -96,7 +113,10 @@ const Contact = () => {
                   className="flex flex-col space-y-4"
                 >
                   <div>
-                    <label htmlFor="name" className="text-gray-700 font-bold">
+                    <label
+                      htmlFor="name"
+                      className="text-gray-700 font-bold"
+                    >
                       Enter Your Name
                     </label>
                     <input
@@ -113,7 +133,10 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="text-gray-700 font-bold">
+                    <label
+                      htmlFor="email"
+                      className="text-gray-700 font-bold"
+                    >
                       Enter Your Email
                     </label>
                     <input

@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="sticky top-0 z-30 text-[#0097b2] flex justify-between items-center h-[100px] mt-5  mx-auto px-4 sm:px-10  bg-black "
+      className="sticky top-0 z-30 text-[#0097b2] flex justify-between items-center h-[10vh]   mx-auto px-4 sm:px-10  bg-black  "
     >
       <div className="flex text-center ">
         <Link
@@ -26,13 +26,13 @@ const Navbar = () => {
         >
           <img
             src={logo}
-            className="h-20 w-20 mr-4 "
+            className="h-[4vw] w-auto mr-4 "
             alt="logo"
           />
         </Link>
       </div>
 
-      <ul className="hidden md:flex text-[24px]">
+      <ul className="hidden md:flex text-[20px]">
         <li className="p-4">
           <Link
             to="hero"
