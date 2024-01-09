@@ -14,20 +14,20 @@ const Hero = () => {
         id="hero"
         className="flex flex-row justify-between mx-10 mb-[60px]"
       >
-        <div className="w-[50%] py-[40px]">
+        <div className="w-[50vw] py-[40px]">
           <img
             src={webpropic}
             alt="hero"
-            className="rounded-full w-[750px] h-[750px] mx-auto   "
+            className="rounded-full w-[42vw] h-[42vw] mx-auto   "
           />
         </div>
-        <div className="flex flex-col  w-[50%] pl-2 ">
-          <div className="flex flex-col my-auto text-white font-extrabold text-[96px] mt-[100px]">
+        <div className="flex flex-col  w-[50vw] pl-2 ">
+          <div className="flex flex-col my-auto text-white font-extrabold text-[5vw] mt-[100px]">
             <p>Turning complex problems into elegant solutions.</p>
           </div>
 
           <div className="flex flex-col my-auto mb-[100px]">
-            <h1 className=" text-[#0097b2] font-extrabold text-[48px]">
+            <h1 className=" text-[#0097b2] font-extrabold text-[3vw]">
               Andrew Julian
             </h1>
 
