@@ -13,38 +13,35 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="sticky top-0 z-30 text-white flex justify-between items-center h-24  mx-auto px-4 sm:px-10  bg-black "
+      className="sticky top-0 z-30 text-[#0097b2] flex justify-between items-center h-[100px] mt-5  mx-auto px-4 sm:px-10  bg-black "
     >
-      <div className="flex text-center">
+      <div className="flex text-center ">
         <Link
           to="navbar"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-100}
           duration={500}
           className="flex items-center cursor-pointer "
         >
           <img
             src={logo}
-            className="h-10 w-10 mr-4"
+            className="h-20 w-20 mr-4 "
             alt="logo"
           />
-          <h1 className="text-[#0097b2] font-semibold text-2xl mt-1">
-            Andrew Julian
-          </h1>
         </Link>
       </div>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex text-[24px]">
         <li className="p-4">
           <Link
             to="hero"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-200}
             duration={500}
             onClick={handleNav}
-            className="cursor-pointer hover:text-[#0097b2]"
+            className="cursor-pointer hover:text-[#fabc5e]"
           >
             Home
           </Link>
@@ -57,7 +54,7 @@ const Navbar = () => {
             offset={-100}
             duration={500}
             onClick={handleNav}
-            className="cursor-pointer hover:text-[#0097b2]"
+            className="cursor-pointer hover:text-[#fabc5e]"
           >
             About
           </Link>
@@ -70,7 +67,7 @@ const Navbar = () => {
             offset={-100}
             duration={500}
             onClick={handleNav}
-            className="cursor-pointer hover:text-[#0097b2]"
+            className="cursor-pointer hover:text-[#fabc5e]"
           >
             Projects
           </Link>
@@ -83,7 +80,7 @@ const Navbar = () => {
             offset={-100}
             duration={500}
             onClick={handleNav}
-            className="cursor-pointer hover:text-[#0097b2]"
+            className="cursor-pointer hover:text-[#fabc5e]"
           >
             Contact
           </Link>

@@ -12,7 +12,7 @@ const Hero = () => {
     <Fade>
       <div
         id="hero"
-        className="flex flex-row justify-between mx-10"
+        className="flex flex-row justify-between mx-10 mb-[60px]"
       >
         <div className="w-[50%] py-[40px]">
           <img
@@ -21,7 +21,7 @@ const Hero = () => {
             className="rounded-full w-[750px] h-[750px] mx-auto   "
           />
         </div>
-        <div className="flex flex-col  w-[50%] pl-5 ">
+        <div className="flex flex-col  w-[50%] pl-2 ">
           <div className="flex flex-col my-auto text-white font-extrabold text-[96px] mt-[100px]">
             <p>Turning complex problems into elegant solutions.</p>
           </div>
