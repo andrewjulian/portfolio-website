@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="sticky top-0 z-30 text-white flex justify-between items-center h-24  mx-auto px-4 sm:px-10  bg-black"
+      className="sticky top-0 z-30 text-white flex justify-between items-center h-24  mx-auto px-4 sm:px-10  bg-black "
     >
       <div className="flex text-center">
         <Link
@@ -24,7 +24,11 @@ const Navbar = () => {
           duration={500}
           className="flex items-center cursor-pointer "
         >
-          <img src={logo} className="h-10 w-10 mr-4" alt="logo" />
+          <img
+            src={logo}
+            className="h-10 w-10 mr-4"
+            alt="logo"
+          />
           <h1 className="text-[#0097b2] font-semibold text-2xl mt-1">
             Andrew Julian
           </h1>
@@ -86,7 +90,10 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div onClick={handleNav} className="block m-2 md:hidden">
+      <div
+        onClick={handleNav}
+        className="block m-2 md:hidden"
+      >
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
@@ -99,7 +106,11 @@ const Navbar = () => {
       >
         <ul>
           <li className="p-4 pt-8 border-b border-[#0097b2] flex">
-            <img src={logo} className="h-10 w-10 mr-4" alt="logo" />
+            <img
+              src={logo}
+              className="h-10 w-10 mr-4"
+              alt="logo"
+            />
             <h1 className="text-[#0097b2] font-semibold text-2xl mt-1 ">
               Andrew Julian
             </h1>

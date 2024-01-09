@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../assets/heroimage.png";
+import webpropic from "../assets/webpropic.png";
 import linked from "../assets/linkedinlogo.png";
 import github from "../assets/github-mark-white.png";
 import medium from "../assets/medium-black-symbol.png";
@@ -10,61 +10,65 @@ import Fade from "react-reveal/Fade";
 const Hero = () => {
   return (
     <Fade>
-      <div id="hero" className="mt-[-10px]">
-        <img
-          src={hero}
-          alt="hero"
-          className="md:mr-4 sm:w-[50%] pr-4 float-right"
-        />
-        <div className="px-[5%] py-[14%] sm:ml-5">
-          <h1 className="text-center text-[#0097b2] font-extrabold text-[7vw] sm:text-[5vw]">
-            Andrew Julian
-          </h1>
-
-          <div className="flex font-mono justify-center text-center px:5 mt-3 mb-5">
-            <h4 className="text-[15px] sm:text-[1.25vw]">
-              Results oriented Software Engineer focused on creating frontend,
-              backend, and full stack solutions in collaboration with diverse
-              teams and stakeholders to produce high-quality products.
-            </h4>
+      <div
+        id="hero"
+        className="flex flex-row justify-between mx-10"
+      >
+        <div className="w-[50%] py-[40px]">
+          <img
+            src={webpropic}
+            alt="hero"
+            className="rounded-full w-[750px] h-[750px] mx-auto   "
+          />
+        </div>
+        <div className="flex flex-col  w-[50%] pl-5 ">
+          <div className="flex flex-col my-auto text-white font-extrabold text-[96px] mt-[100px]">
+            <p>Turning complex problems into elegant solutions.</p>
           </div>
 
-          <center>
-            <Typed
-              className="font-mono text-[#0097b2] text-[5vw] sm:text-[2.5vw]"
-              strings={[
-                "Software Engineer",
-                "Full Stack Developer",
-                "Frontend Developer",
-                "Backend Developer",
-                "Database and API Developer",
-                "Technology Enthusiast",
-                "Lifelong Learner",
-              ]}
-              typeSpeed={40}
-              backSpeed={60}
-              backDelay={1500}
-              loop={true}
-            />
-          </center>
+          <div className="flex flex-col my-auto mb-[100px]">
+            <h1 className=" text-[#0097b2] font-extrabold text-[48px]">
+              Andrew Julian
+            </h1>
 
-          <div className="flex justify-center mt-2">
-            <a href="https://github.com/Andrewjulian" target="blank">
-              <img src={github} alt="github" className="h-10 w-auto m-2" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/andrewjohnjulian/"
-              target="blank"
-            >
-              <img src={linked} alt="linked" className="h-10 w-auto m-2" />
-            </a>
-            <a href="https://medium.com/@andrewjjulian" target="blank">
-              <img
-                src={medium}
-                alt="medium"
-                className="h-10 w-10 rounded-full bg-white  m-2"
-              />
-            </a>
+            <div className="flex font-mono  ">
+              <h4 className="">
+                Software Engineer | Technical Founder | Curriculum Development
+              </h4>
+            </div>
+
+            <div className="flex  mt-2">
+              <a
+                href="https://github.com/Andrewjulian"
+                target="blank"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="h-10 w-auto m-2"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/andrewjohnjulian/"
+                target="blank"
+              >
+                <img
+                  src={linked}
+                  alt="linked"
+                  className="h-10 w-auto m-2"
+                />
+              </a>
+              <a
+                href="https://medium.com/@andrewjjulian"
+                target="blank"
+              >
+                <img
+                  src={medium}
+                  alt="medium"
+                  className="h-10 w-10 rounded-full bg-white  m-2"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
