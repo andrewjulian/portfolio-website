@@ -43,7 +43,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="antialiased bg-gray-300 px-[120px]  py-10 "
+      className="antialiased bg-black px-[120px]  py-10 "
     >
       <Fade>
         <div className="flex w-full">

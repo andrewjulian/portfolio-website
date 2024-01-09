@@ -1,51 +1,64 @@
 import React from "react";
 import codeone from "../assets/navbarcode.png";
 import Fade from "react-reveal/Fade";
+import peerdesk from "../assets/peerdesk.png";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="flex bg-gray-300 justify-between w-full p-[5%] sm:mt-10"
+      className="flex bg-gray-300 my-10  flex-col py-10 "
     >
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
       />
-      <Fade left>
+
+      <h1 className="text-center text-black mb-2 font-extrabold text-[4vw] md:text-[4vw] stroke-black ">
+        Current Project
+      </h1>
+      <div className="flex flex-row gap-10 my-5 mx-[120px]">
         <img
-          src={codeone}
-          alt="code"
-          className="hidden sm:flex w-[40%] mx-[3%] rounded-2xl"
+          src={peerdesk}
+          alt="PeerDesk"
+          className="w-[40vw] h-auto object-cover shadow-2xl font-extrabold"
+          height={100}
+          width={100}
         />
-      </Fade>
-      <Fade right>
-        <div className="block sm:mr-[2%]">
-          <h1 className="text-center text-black sm:text-black  font-bold text-[7vw] sm:text-[2vw] mt-2 py-auto">
-            Experience in Creating Applications Using:
-          </h1>
-          <div className="grid grid-cols-4 place-items-center gap-5 pt-4">
-            <img
-              className="text-[15vs] m-5 sm:text-[6vw] cursor-none"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            />
-            <i className="text-[15vw] devicon-react-original colored m-5 sm:text-[6vw] devicon-react-original colored cursor-none"></i>
-            <i className="text-[15vw] devicon-ruby-plain colored m-5 sm:text-[6vw] devicon-ruby-plain colored cursor-none"></i>
-            <i className="text-[15vw] devicon-rails-plain colored m-5 sm:text-[6vw] devicon-rails-plain colored cursor-none"></i>
-            <i className="text-[15vw] devicon-nodejs-plain colored m-5 sm:text-[6vw] devicon-nodejs-plain colored cursor-none"></i>
-            <i className="text-[15vw] devicon-express-original colored m-5 sm:text-[6vw] devicon-express-original colored cursor-none"></i>
-            <i className="text-[15vw] devicon-mongodb-plain colored m-5 sm:text-[6vw] devicon-mongodb-plain colored cursor-none"></i>
-            <img
-              className="text-[15vs] m-5 sm:text-[6vw] cursor-none"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-            />
-            <i className="text-[15vw] devicon-html5-plain colored m-5 sm:text-[6vw] devicon-html5-plain colored cursor-none"></i>
-            <i className="text-[15vw] devicon-css3-plain colored m-5 sm:text-[6vw] devicon-css3-plain colored cursor-none"></i>
-            <i className="text-[15vw] devicon-tailwindcss-plain colored m-5 sm:text-[6vw] devicon-tailwindcss-plain colored cursor-none"></i>
-            <i className="text-[15vw] devicon-bootstrap-plain colored m-5 sm:text-[6vw] devicon-bootstrap-plain colored cursor-none"></i>
+
+        <div className="flex flex-col">
+          <div className="my-auto ">
+            <div className="mb-14">
+              <h1 className=" text-[#0568a0] font-semibold text-[3vw] mb-5 ">
+                PeerDesk
+              </h1>
+              <p className=" text-black font-semibold text-[1.5vw] mb-5 ">
+                PeerDesk is a peer-to-peer collaboration platform for tech
+                professionals seeking to complete projects and build their
+                portfolios to become more marketable and competitive in the job
+                market.
+              </p>
+              <a href="https://peerdesk.app">
+                <button className="bg-[#0568a0] text-white font-semibold text-[1.5vw] rounded-md px-4 py-2 ">
+                  Visit PeerDesk
+                </button>
+              </a>
+            </div>
+            <div className="flex flex-row mb-5  gap-5">
+              <i className="devicon-nextjs-plain text-[3vw] text-black"></i>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                className="h-[3vw]"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg"
+                className="h-[3vw]"
+              />
+              <i className="devicon-tailwindcss-plain colored text-[3vw]"></i>
+            </div>
           </div>
         </div>
-      </Fade>
+      </div>
     </div>
   );
 };
