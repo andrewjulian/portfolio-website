@@ -12,33 +12,38 @@ const Hero = () => {
     <Fade>
       <div
         id="hero"
-        className="flex flex-row justify-between mx-10 mb-[70px] pt-5"
+        className="flex flex-col md:flex-row justify-between mt-5  md:mx-10 mb-[70px] "
       >
-        <div className="w-[50vw] py-[20px]">
+        <div className="w-full md:w-[50vw] md:py-[10px]">
           <img
             src={webpropic}
             alt="hero"
-            className="rounded-full w-[42vw] h-[42vw] mx-auto"
+            className="rounded-full h-[300px] w-auto md:w-[42vw] md:h-[42vw] mx-auto"
           />
         </div>
-        <div className="flex flex-col w-[50vw] pl-2 my-auto   ">
-          <div className="my-auto ">
-            <div className="flex flex-col my-auto text-white font-extrabold text-[5vw] ">
+
+        <div className="flex flex-col mx-auto md:w-[50vw] px-auto my-auto py-auto  ">
+          <div className="my-auto text-center md:text-left  ">
+            <div className="flex flex-col my-auto px-5 text-white font-extrabold text-[36px] md:text-[5vw]  ">
               <p>Turning complex problems into elegant solutions.</p>
             </div>
 
-            <div className="flex flex-col my-auto mt-10">
-              <h1 className=" text-[#0097b2] font-extrabold text-[2vw]">
+            <div className="flex text-center md:text-left flex-col my-auto mt-10 ">
+              <h1 className=" text-[#0097b2] pl-6 md:ml-0 font-extrabold text-[40px] md:text-[2.2vw]">
                 Andrew Julian
               </h1>
 
-              <div className="flex font-mono text-[1vw] ">
-                <h4 className="">
-                  Software Engineer | Technical Founder | Curriculum Development
-                </h4>
+              <div className="hidden md:flex font-mono mx-0 md:mx-auto text-[20px] md:text-[1.2vw] ">
+                <div className="flex flex-col md:flex-row">
+                  <p>Software Engineer</p>
+                  <p className="mx-3 hidden md:flex">|</p>
+                  <p>Technical Founder</p>
+                  <p className="mx-3 hidden md:flex">|</p>
+                  <p>Curriculum Developer</p>
+                </div>
               </div>
 
-              <div className="flex  mt-2">
+              <div className="flex mx-auto md:mx-4  mt-2">
                 <a
                   href="https://github.com/Andrewjulian"
                   target="blank"

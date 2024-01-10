@@ -10,7 +10,7 @@ const BackToTop = () => {
         className="fixed bottom-6 right-3 cursor-pointer text-gray-500 hover:text-[#0097b2] md:right-10"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-200}
         duration={500}
       >
         <BsArrowUpCircleFill className="w-8 h-8" />

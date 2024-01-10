@@ -43,12 +43,12 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="antialiased bg-black px-[120px]  py-10 "
+      className="antialiased bg-black px-5 md:px-[120px]  py-10 "
     >
       <Fade>
         <div className="flex w-full">
           <div className="flex flex-col lg:flex-row lg:space-x-10 lg:space-y-0 space-y-4  p-8 bg-[#0097b2] rounded-xl  items-center justify-center">
-            <div className="flex flex-col justify-between mr-10">
+            <div className="flex flex-col justify-between md:mr-10">
               <h1 className="text-4xl font-bold text-white ">Contact Me</h1>
               <p className="pt-2 text-white text-lg tracking-wide">
                 I'm currently looking for a new opportunity, my inbox is always

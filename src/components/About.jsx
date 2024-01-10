@@ -14,33 +14,35 @@ const About = () => {
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
       />
 
-      <h1 className="text-center text-black mb-2 font-extrabold text-[4vw] md:text-[4vw] stroke-black ">
-        Current Project
-      </h1>
       <div className="flex flex-row gap-10 my-5 mx-[120px]">
         <img
           src={peerdesk}
           alt="PeerDesk"
-          className="w-[40vw] h-auto object-cover shadow-2xl font-extrabold"
+          className="w-[40vw] h-auto object-cover shadow-2xl font-extrabold rounded-2xl"
           height={100}
           width={100}
         />
 
         <div className="flex flex-col">
           <div className="my-auto ">
-            <div className="mb-14">
-              <h1 className=" text-[#0568a0] font-semibold text-[3vw] mb-5 ">
+            <div className="mb-10">
+              <h1 className=" text-[#0568a0] font-semibold text-[3vw]  ">
                 PeerDesk
               </h1>
-              <p className=" text-black font-semibold text-[1.5vw] mb-5 ">
+              <p className=" text-black font-semibold text-[1.5vw]  ">
+                Technical Founder and Lead Developer
+              </p>
+              <hr className="bg-[#0568a0] h-[1px] my-2" />
+              <p className=" text-black font-semibold text-[1.5vw] mb-8 ">
                 PeerDesk is a peer-to-peer collaboration platform for tech
                 professionals seeking to complete projects and build their
                 portfolios to become more marketable and competitive in the job
                 market.
               </p>
+
               <a href="https://peerdesk.app">
-                <button className="bg-[#0568a0] text-white font-semibold text-[1.5vw] rounded-md px-4 py-2 ">
-                  Visit PeerDesk
+                <button className="bg-[#0568a0] text-white font-normals text-[1.3vw] rounded-md px-4 py-2 ">
+                  Visit PeerDesk's Main Page
                 </button>
               </a>
             </div>

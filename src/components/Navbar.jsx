@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="sticky top-0 z-30 text-[#0097b2] flex justify-between items-center h-[10vh]   mx-auto px-4 sm:px-10  bg-black  "
+      className=" sticky top-0 z-30 text-[#0097b2] flex justify-between items-center h-[100px] mx-auto px-4 sm:px-10  bg-black  "
     >
       <div className="flex text-center ">
         <Link
@@ -26,9 +26,12 @@ const Navbar = () => {
         >
           <img
             src={logo}
-            className="h-[4vw] w-auto mr-4 "
+            className="h-[40px] w-auto md:h-[4vw] mr-4 "
             alt="logo"
           />
+          <h1 className="text-[#0097b2] font-semibold text-2xl mt-1 ">
+            Andrew Julian
+          </h1>
         </Link>
       </div>
 
@@ -46,19 +49,7 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li className="p-4">
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            onClick={handleNav}
-            className="cursor-pointer hover:text-[#fabc5e]"
-          >
-            About
-          </Link>
-        </li>
+
         <li className="p-4">
           <Link
             to="projects"
@@ -69,9 +60,10 @@ const Navbar = () => {
             onClick={handleNav}
             className="cursor-pointer hover:text-[#fabc5e]"
           >
-            Projects
+            Experience
           </Link>
         </li>
+
         <li className="p-4">
           <Link
             to="contact"
@@ -125,7 +117,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="p-4 border-b border-[#0097b2]">
+          {/* <li className="p-4 border-b border-[#0097b2]">
             <Link
               to="about"
               spy={true}
@@ -137,7 +129,7 @@ const Navbar = () => {
             >
               About
             </Link>
-          </li>
+          </li> */}
           <li className="p-4 border-b border-[#0097b2]">
             <Link
               to="projects"
@@ -148,7 +140,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="cursor-pointer"
             >
-              Projects
+              Experience
             </Link>
           </li>
           <li className="p-4 ">
