@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
 import logo from "../assets/logo.png";
+import github from "../assets/github-mark-white.png";
+import linked from "../assets/linkedinlogo.png";
+import medium from "../assets/medium-black-symbol.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -117,19 +120,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          {/* <li className="p-4 border-b border-[#0097b2]">
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-              onClick={handleNav}
-              className="cursor-pointer"
-            >
-              About
-            </Link>
-          </li> */}
+
           <li className="p-4 border-b border-[#0097b2]">
             <Link
               to="projects"
@@ -155,6 +146,40 @@ const Navbar = () => {
             >
               Contact
             </Link>
+          </li>
+          <li className="p-4 ">
+            <div className="flex jusitfy-center md:mx-4  mt-2">
+              <a
+                href="https://github.com/Andrewjulian"
+                target="blank"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="h-10 w-auto m-2"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/andrewjohnjulian/"
+                target="blank"
+              >
+                <img
+                  src={linked}
+                  alt="linked"
+                  className="h-10 w-auto m-2"
+                />
+              </a>
+              <a
+                href="https://medium.com/@andrewjjulian"
+                target="blank"
+              >
+                <img
+                  src={medium}
+                  alt="medium"
+                  className="h-10 w-10 rounded-full bg-white  m-2"
+                />
+              </a>
+            </div>
           </li>
         </ul>
       </div>

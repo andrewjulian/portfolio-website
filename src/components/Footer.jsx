@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       <div className="w-[90vw] mx-auto flex flex-col items-center container md:flex-row md:p-6 p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          Created By: Andrew Julian @ 2023
+          Created By: Andrew Julian @ 2024
         </span>
 
         <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">

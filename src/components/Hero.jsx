@@ -14,7 +14,7 @@ const Hero = () => {
         id="hero"
         className="flex flex-col md:flex-row justify-between mt-5  md:mx-10 mb-[70px] "
       >
-        <div className="w-full md:w-[50vw] md:py-[10px]">
+        <div className="w-full md:w-[50vw] md:py-[10px] mb-8">
           <img
             src={webpropic}
             alt="hero"
@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
 
             <div className="flex text-center md:text-left flex-col my-auto mt-10 ">
-              <h1 className=" text-[#0097b2] pl-6 md:ml-0 font-extrabold text-[40px] md:text-[2.2vw]">
+              <h1 className=" text-[#0097b2] md:pl-6 md:ml-0 font-extrabold text-[40px] md:text-[2.2vw]">
                 Andrew Julian
               </h1>
 

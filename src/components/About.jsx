@@ -1,7 +1,7 @@
 import React from "react";
-import codeone from "../assets/navbarcode.png";
 import Fade from "react-reveal/Fade";
 import peerdesk from "../assets/peerdesk.png";
+import rooms from "../assets/rooms.jpg";
 
 const About = () => {
   return (

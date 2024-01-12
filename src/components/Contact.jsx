@@ -51,15 +51,13 @@ const Contact = () => {
             <div className="flex flex-col justify-between md:mr-10">
               <h1 className="text-4xl font-bold text-white ">Contact Me</h1>
               <p className="pt-2 text-white text-lg tracking-wide">
-                I'm currently looking for a new opportunity, my inbox is always
-                open. My focus is in creating websites and web applications with
-                a focus on the front-end or full-stack, but I am also open to
-                exploring other opportunities.
+                I'm currently looking for new full-time opportunities. I
+                specialize in creating websites and web applications utilizing a
+                variety of frameworks and languages.
               </p>
               <p className="pt-2 text-white text-lg tracking-wide mb-5">
                 Whether you have a question or just want to say "Hi &#128075;",
-                use the form to send me a message and I will get back to you as
-                soon as possible!
+                please use the form to send me a message.
               </p>
               <div className="flex flex-col space-y-4">
                 <div className="inline-flex space-x-2 items-center">
