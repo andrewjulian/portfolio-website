@@ -1,8 +1,7 @@
 import peerdesk from "../assets/peerdesk.png";
 import rooms from "../assets/rooms.jpg";
 import allinai from "../assets/allinaiweb.png";
-
-//comment
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -49,9 +48,13 @@ const Projects = () => {
                 href="https://peerdesk.app"
                 className="flex justify-center md:justify-start"
               >
-                <button className="bg-[#0568a0]  text-white font-normals text-[18px] md:text-[1.3vw] rounded-md px-4 py-2 ">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-[#0568a0]  text-white font-normals text-[18px] md:text-[1.3vw] rounded-md px-4 py-2 "
+                >
                   Visit the PeerDesk Website
-                </button>
+                </motion.button>
               </a>
             </div>
             <div className="flex justify-center md:justify-start">
@@ -111,9 +114,13 @@ const Projects = () => {
                 href="https://rooms.xyz"
                 className="flex justify-center md:justify-start"
               >
-                <button className="bg-[#0568a0]  text-white font-normals text-[18px] md:text-[1.3vw] rounded-md px-4 py-2 ">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-[#0568a0]  text-white font-normals text-[18px] md:text-[1.3vw] rounded-md px-4 py-2 "
+                >
                   Visit the Rooms Website
-                </button>
+                </motion.button>
               </a>
             </div>
           </div>
@@ -153,9 +160,13 @@ const Projects = () => {
                 href="https://all-in-ai.org"
                 className="flex justify-center md:justify-start"
               >
-                <button className="bg-[#0568a0]  text-white font-normals text-[18px] md:text-[1.3vw] rounded-md px-4 py-2 ">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-[#0568a0]  text-white font-normals text-[18px] md:text-[1.3vw] rounded-md px-4 py-2 "
+                >
                   Visit the All In AI Website
-                </button>
+                </motion.button>
               </a>
             </div>
             <div className="flex justify-center md:justify-start">
