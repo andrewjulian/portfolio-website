@@ -3,14 +3,16 @@ import webpropic from "../assets/webpropic.png";
 import linked from "../assets/linkedinlogo.png";
 import github from "../assets/github-mark-white.png";
 import medium from "../assets/medium-black-symbol.png";
-import Typed from "react-typed";
+import { motion } from "framer-motion";
 import "../index.css";
-import Fade from "react-reveal/Fade";
 
 const Hero = () => {
   return (
-    <Fade>
-      <div
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
         id="hero"
         className="flex flex-col md:flex-row justify-between mt-5  md:mx-10 mb-[70px] "
       >
@@ -78,8 +80,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-    </Fade>
+      </motion.div>
+    </>
   );
 };
 

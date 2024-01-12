@@ -14,7 +14,12 @@ const Projects = () => {
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
       />
 
-      <div className="flex flex-col md:flex-row gap-x-[60px] gap-y-2 mt-5 md:mb-20 md:mt-10 py-2 md:py-0 md:mx-[120px] ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        className="flex flex-col md:flex-row gap-x-[60px] gap-y-2 mt-5 md:mb-20 md:mt-10 py-2 md:py-0 md:mx-[120px] "
+      >
         <h1 className="md:hidden text-[40px] text-center text-[#0568a0] font-semibold   ">
           PeerDesk
         </h1>
@@ -79,9 +84,14 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col md:flex-row-reverse gap-x-[60px] gap-y-2 my-5 py-2 md:py-0 md:mx-[120px] md:mt-20 ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        className="flex flex-col md:flex-row-reverse gap-x-[60px] gap-y-2 my-5 py-2 md:py-0 md:mx-[120px] md:mt-20 "
+      >
         <h1 className="md:hidden text-[40px] text-center text-[#0568a0] font-semibold   ">
           Rooms By Things
         </h1>
@@ -125,9 +135,14 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col md:flex-row gap-x-[60px] gap-y-2 my-5 md:mt-20 md:mb-[40px] py-2 md:py-0 md:mx-[120px]  ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        className="flex flex-col md:flex-row gap-x-[60px] gap-y-2 my-5 md:mt-20 md:mb-[40px] py-2 md:py-0 md:mx-[120px]  "
+      >
         <h1 className="md:hidden text-[40px] text-center text-[#0568a0] font-semibold   ">
           All In AI
         </h1>
@@ -191,7 +206,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

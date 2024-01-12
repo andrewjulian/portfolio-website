@@ -5,8 +5,6 @@ import medium from "../assets/medium-black-symbol.png";
 import emailjs from "@emailjs/browser";
 import Fade from "react-reveal/Fade";
 
-import { TbSend } from "react-icons/tb";
-
 const Contact = () => {
   const form = useRef();
 
@@ -170,16 +168,14 @@ const Contact = () => {
                       className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#0097b2] mt-2"
                     />
                   </div>
+
                   <button
                     type="submit"
-                    className="group justify-center text-center self-end font-bold p-2 bg-[#0097b2] text-white rounded-md py-2 flex items-center hover:bg-green-600"
+                    className="group justify-center text-center self-end font-bold p-2 bg-[#0097b2] text-white rounded-md py-2 flex items-center hover:text-[#0097b2] hover:border-2 hover:border-[#0097b2] hover:bg-white hover:shadow-lg transition ease-in-out duration-300 "
                   >
-                    <div className="group-hover:flex">
+                    <div className="">
                       <div>
                         <span>Send Message</span>
-                      </div>
-                      <div className="ml-2 hidden group-hover:block my-auto items-center">
-                        <TbSend />
                       </div>
                     </div>
                   </button>
