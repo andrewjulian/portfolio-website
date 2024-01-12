@@ -12,7 +12,7 @@ import Fade from "react-reveal/Fade";
 
 function App() {
   return (
-    <Fade timeout="4500">
+    <Fade timeout={4500}>
       <div>
         <Navbar />
         <Hero />

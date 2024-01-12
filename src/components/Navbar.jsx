@@ -6,8 +6,16 @@ import github from "../assets/github-mark-white.png";
 import linked from "../assets/linkedinlogo.png";
 import medium from "../assets/medium-black-symbol.png";
 
+import { motion, AnimatePresence } from "framer-motion";
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+};
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -82,12 +90,34 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div
+      <motion.div
         onClick={handleNav}
         className="block m-2 md:hidden"
       >
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-      </div>
+        <AnimatePresence mode="wait">
+          {nav ? (
+            <motion.span
+              key="close"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <AiOutlineClose size={20} />
+            </motion.span>
+          ) : (
+            <motion.span
+              key="menu"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <AiOutlineMenu size={20} />
+            </motion.span>
+          )}
+        </AnimatePresence>
+      </motion.div>
 
       <div
         className={
