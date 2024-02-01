@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className=" bg-gray-300 md:mt-10 flex-col py-5 md:py-10  "
+      className="  md:mt-10 flex-col py-5 md:py-10  "
     >
       <link
         rel="stylesheet"
@@ -38,11 +38,11 @@ const Projects = () => {
               <h1 className="hidden md:flex text-[#0568a0] font-semibold text-[3vw]  ">
                 PeerDesk
               </h1>
-              <p className=" text-black font-semibold text-center mt-2 md:mt-0 md:text-left text-[18px] md:text-[1.5vw]  ">
+              <p className=" text-white font-semibold text-center mt-2 md:mt-0 md:text-left text-[18px] md:text-[1.5vw]  ">
                 Technical Founder and Lead Developer
               </p>
               <hr className="bg-[#0568a0] h-[1px] my-2" />
-              <p className=" text-black font-normal text-[16px] mx-8 md:mx-0 md:text-[1.5vw] mb-8 ">
+              <p className=" text-white font-normal text-[16px] mx-8 md:mx-0 md:text-[1.5vw] mb-8 ">
                 PeerDesk is a peer-to-peer collaboration platform for tech
                 professionals seeking to complete projects and build their
                 portfolios to become more marketable and competitive in the job
@@ -64,10 +64,8 @@ const Projects = () => {
             </div>
             <div className="flex justify-center md:justify-start">
               <div className="flex flex-row mb-5 gap-5">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                  className="h-[40px] md:h-[3vw]"
-                />
+                <i className="devicon-nextjs-original text-[40px] md:text-[3vw] text-white"></i>
+
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                   className="h-[40px] md:h-[3vw]"
@@ -110,11 +108,11 @@ const Projects = () => {
               <h1 className="hidden md:flex text-[#0568a0] font-semibold text-[3vw]  ">
                 Rooms By Things
               </h1>
-              <p className=" text-black font-semibold text-center mt-2 md:mt-0 md:text-left text-[18px] md:text-[1.5vw]  ">
+              <p className=" text-white font-semibold text-center mt-2 md:mt-0 md:text-left text-[18px] md:text-[1.5vw]  ">
                 Community and Technical Support
               </p>
               <hr className="bg-[#0568a0] h-[1px] my-2" />
-              <p className=" text-black font-normal text-[16px] mx-8 md:mx-0 md:text-[1.5vw] mb-8 ">
+              <p className=" text-white font-normal text-[16px] mx-8 md:mx-0 md:text-[1.5vw] mb-8 ">
                 Rooms is a voxel based creativity platform that allows users to
                 create, code, and share their own virtual spaces called Rooms
                 made from 3D objects called Things.
@@ -161,11 +159,11 @@ const Projects = () => {
               <h1 className="hidden md:flex text-[#0568a0] font-semibold text-[3vw]  ">
                 All In AI
               </h1>
-              <p className=" text-black font-semibold text-center mt-2 md:mt-0 md:text-left text-[18px] md:text-[1.5vw]  ">
+              <p className=" text-white font-semibold text-center mt-2 md:mt-0 md:text-left text-[18px] md:text-[1.5vw]  ">
                 Operational and Instructional Consultant
               </p>
               <hr className="bg-[#0568a0] h-[1px] my-2" />
-              <p className=" text-black font-normal text-[16px] mx-8 md:mx-0 md:text-[1.5vw] mb-8 ">
+              <p className=" text-white font-normal text-[16px] mx-8 md:mx-0 md:text-[1.5vw] mb-8 ">
                 All In AI is a student founded non-profit organization that
                 offers in-person and online learning programs to ensure AI
                 education is accessible to all students.

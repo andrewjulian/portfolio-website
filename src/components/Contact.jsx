@@ -183,7 +183,7 @@ const Contact = () => {
                   {success ? (
                     <div
                       class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
-                      role="alert"
+                      role="alert"npm
                     >
                       <span class="font-medium">Email Sent!</span> I will get
                       back to you as soon as I can. Thanks for connecting!

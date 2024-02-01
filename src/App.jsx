@@ -15,10 +15,12 @@ function App() {
     <Fade timeout={4500}>
       <div>
         <Navbar />
-        <Hero />
-        <BackToTop />
-        <Projects />
-        <Contact />
+        <div className="max-w-[1440px] mx-auto ">
+          <Hero />
+          <BackToTop />
+          <Projects />
+          <Contact />
+        </div>
         <Footer />
       </div>
     </Fade>
